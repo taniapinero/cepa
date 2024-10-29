@@ -1,0 +1,263 @@
+
+* {
+    font-family: Poppins;
+}
+
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.dosColumnas{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.unaColumna{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.formulario > div {
+    flex-basis: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select, input[type="date"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, .25);
+}
+
+@media (max-width: 768px) {
+    .formulario > div {
+        flex-basis: 100%;
+    }
+    .formulario, .enviarBoton{
+        width: 95%;
+        height: auto;
+    }
+}
+
+.enviarBoton{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.boton{
+    padding: 15px;
+    background: #0078d7;
+    color: #fff;
+}
+
+.botonDesactivado{
+    padding: 15px;
+    background: #d2d2d2;
+    color: #000;
+    cursor: none;
+}
+
+.error{
+    color: darkred;
+}
+
+/*
+*/
+.seccion-cabecera{
+    width: 100%;
+    background-image: url(/vista/img/nuevos-cursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contenedor{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.cont-peq{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.encabezado{
+    font-size: 60px;
+    font-weight: 900;
+    color: #3d53f2;
+    text-align: center;
+}
+
+.boton-inscribete button{
+    background: #3d53f2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.boton-inscribete button:hover{
+    background: #4a4a4a;
+}
+
+.contenedor a{
+    color: white;
+    font-size: 17px;
+}
+
+/**/
+.otros-cursos{
+    display: flex;
+}
+
+.cursos{
+    width: 24%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.cursos img{
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+.cursos p{
+    text-align: center;
+    font-size: 19px;
+}
+
+h3{
+    font-size: 30px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.segunda-seccion{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.tercera-seccion{
+    margin-top: 70px;
+}
+
+.tercera-seccion h3{
+    color: #3d53f2;
+}
+.nosotros{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.nosotros img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.c-45{
+    width: 45%;
+}
+
+.pie{
+    width: 100%;
+    display: flex;
+    background-color: #2c2c2c;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+
+.pie h4, .pie p{
+    color: white;
+}
+
+.pie p:hover{
+    color: #3d53f2;
+}
+
+.pie img{
+    width: 30%;
+}
+
+.mas-datos{
+    display: flex;
+}
+
+.mas-datos div{
+    margin: 50px;
+}
+
